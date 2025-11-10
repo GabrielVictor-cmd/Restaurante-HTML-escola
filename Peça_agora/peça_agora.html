@@ -9,37 +9,38 @@
 <body>
     <main>
         <header>Peça agora mesmo!</header>
-        <form action="">
-
+        <form action="" onsubmit="return false;">
             <div>
-                <label>Prato:
-                    <input type="text" id="">
-                </label>
-                
-            </div>
-            
-            <div>
-                <label>Endereço para entrega:
-                    <input type="text" id="">
+                <label>
+                    <input type="text" id="prato" name="prato" placeholder="Prato">
                 </label>
             </div>
 
-            ou 
-            
+            <div>
+                <label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Endereço para entrega">
+                </label>
+            </div>
+            <p>ou</p>
+
             <div>
                 <label>Vou pegar aí
-                    <input type="checkbox" id="">
+                    <input type="checkbox" id="retirar" name="retirar">
                 </label>
-                
             </div>
 
-            <button type="submit">Concluir</button>
+            <div class="actions">
+                <button type="button" id="concluirBtn">Concluir</button>
+                <button type="button" id="homeBtn">Página inicial</button>
+                <button type="button" id="cardapioBtn">Cardápio</button>
+            </div>
         </form>
 
-        <a href="../index.html"> <button id="voltar"> <= Página inicial </button></a>
     </main>
 
     <aside>
     </aside>
+    
+    <script src="index.js"></script>
 </body>
 </html>
